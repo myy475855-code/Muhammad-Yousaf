@@ -1,0 +1,98 @@
+[
+  {
+    "name": "HTML5",
+    "level": 95,
+    "group": "Frontend",
+    "icon": "bi-filetype-html"
+  },
+  {
+    "name": "CSS3",
+    "level": 90,
+    "group": "Frontend",
+    "icon": "bi-filetype-css"
+  },
+  {
+    "name": "JavaScript",
+    "level": 85,
+    "group": "Frontend",
+    "icon": "bi-filetype-js"
+  },
+  {
+    "name": "Bootstrap",
+    "level": 90,
+    "group": "Frontend",
+    "icon": "bi-bootstrap"
+  },
+  {
+    "name": "Python",
+    "level": 90,
+    "group": "Backend",
+    "icon": "bi-filetype-py"
+  },
+  {
+    "name": "Flask",
+    "level": 85,
+    "group": "Backend",
+    "icon": "bi-server"
+  },
+  {
+    "name": "Django",
+    "level": 82,
+    "group": "Backend",
+    "icon": "bi-globe2"
+  },
+  {
+    "name": "REST APIs",
+    "level": 82,
+    "group": "Backend",
+    "icon": "bi-braces"
+  },
+  {
+    "name": "C++",
+    "level": 78,
+    "group": "Programming",
+    "icon": "bi-code-slash"
+  },
+  {
+    "name": "C#",
+    "level": 78,
+    "group": "Programming",
+    "icon": "bi-c-circle"
+  },
+  {
+    "name": "SQL Server",
+    "level": 78,
+    "group": "Database",
+    "icon": "bi-database"
+  },
+  {
+    "name": "DSA",
+    "level": 80,
+    "group": "CS Fundamentals",
+    "icon": "bi-diagram-3"
+  },
+  {
+    "name": "OOP",
+    "level": 82,
+    "group": "CS Fundamentals",
+    "icon": "bi-box"
+  },
+  {
+    "name": "DBMS",
+    "level": 80,
+    "group": "CS Fundamentals",
+    "icon": "bi-database-check"
+  },
+  {
+    "name": "Operating Systems",
+    "level": 72,
+    "group": "CS Fundamentals",
+    "icon": "bi-cpu"
+  },
+  {
+    "name": "Artificial Intelligence",
+    "level": 68,
+    "group": "CS Fundamentals",
+    "icon": "bi-robot"
+  }
+]

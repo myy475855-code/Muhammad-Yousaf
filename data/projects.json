@@ -1,0 +1,249 @@
+[
+  {
+    "title": "LMS — Learning Management System",
+    "description": "University project built using C# Windows Forms and SQL Server. Teachers can upload lectures and quizzes, while students can take quizzes with automatic grading.",
+    "tech": [
+      "C#",
+      "SQL Server"
+    ],
+    "category": "Desktop",
+    "github": "https://github.com/myy475855-code/lms-in-C-",
+    "featured": true
+  },
+  {
+    "title": "Gemini API Integration",
+    "description": "Python Flask application integrating Google's Gemini API to provide generative AI responses through a web interface.",
+    "tech": [
+      "Python",
+      "Flask",
+      "Gemini API"
+    ],
+    "category": "AI / Backend",
+    "github": "https://github.com/myy475855-code/Gemini-api-integrations",
+    "featured": true
+  },
+  {
+    "title": "Google Login & Signup",
+    "description": "Flask application implementing Google OAuth authentication with a Bootstrap-based sign-in and registration interface.",
+    "tech": [
+      "Python",
+      "Flask",
+      "OAuth",
+      "Bootstrap"
+    ],
+    "category": "Authentication",
+    "github": "https://github.com/myy475855-code/google-login-and-signup-form",
+    "featured": true
+  },
+  {
+    "title": "E-Commerce Shop",
+    "description": "Full-stack e-commerce application covering product browsing, shopping cart functionality, and checkout flows.",
+    "tech": [
+      "Flask",
+      "Full Stack"
+    ],
+    "category": "Full Stack",
+    "github": "https://github.com/myy475855-code/MY-shop",
+    "featured": true
+  },
+  {
+    "title": "Currency Converter",
+    "description": "Currency conversion web application built with Flask.",
+    "tech": [
+      "Python",
+      "Flask"
+    ],
+    "category": "Utilities",
+    "github": "https://github.com/myy475855-code/currency-converter"
+  },
+  {
+    "title": "Flask Portfolio",
+    "description": "A Flask-based portfolio project.",
+    "tech": [
+      "Python",
+      "Flask"
+    ],
+    "category": "Frontend",
+    "github": "https://github.com/myy475855-code/flask-portfilo"
+  },
+  {
+    "title": "Flask Resume Creator",
+    "description": "Resume creation application built with Flask.",
+    "tech": [
+      "Python",
+      "Flask"
+    ],
+    "category": "Utilities",
+    "github": "https://github.com/myy475855-code/flask-resume-creator"
+  },
+  {
+    "title": "Weather App",
+    "description": "Weather application built with Flask.",
+    "tech": [
+      "Python",
+      "Flask"
+    ],
+    "category": "Utilities",
+    "github": "https://github.com/myy475855-code/flask-weather-app"
+  },
+  {
+    "title": "QR Generator",
+    "description": "QR code generation utility.",
+    "tech": [
+      "Python",
+      "Flask"
+    ],
+    "category": "Utilities",
+    "github": "https://github.com/myy475855-code/flask-qr-generator"
+  },
+  {
+    "title": "Barcode Generator",
+    "description": "Barcode generation utility.",
+    "tech": [
+      "Python",
+      "Flask"
+    ],
+    "category": "Utilities",
+    "github": "https://github.com/myy475855-code/flask-barcode"
+  },
+  {
+    "title": "OTP Sender",
+    "description": "OTP sending application.",
+    "tech": [
+      "Python",
+      "Flask"
+    ],
+    "category": "Backend",
+    "github": "https://github.com/myy475855-code/flask-otp-sender"
+  },
+  {
+    "title": "Contact Form",
+    "description": "Contact form project.",
+    "tech": [
+      "Python",
+      "Flask"
+    ],
+    "category": "Backend",
+    "github": "https://github.com/myy475855-code/flask-Contact-OR-Form"
+  },
+  {
+    "title": "Todo App",
+    "description": "Task management application.",
+    "tech": [
+      "Python",
+      "Flask"
+    ],
+    "category": "Utilities",
+    "github": "https://github.com/myy475855-code/MYY-Todo"
+  },
+  {
+    "title": "Animated Portfolio",
+    "description": "Animated front-end portfolio experiment.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "category": "Frontend",
+    "github": "https://github.com/myy475855-code/animated-portfilo"
+  },
+  {
+    "title": "Animated Login Form",
+    "description": "Animated login form experiment.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "category": "Frontend",
+    "github": "https://github.com/myy475855-code/aminated-login-form"
+  },
+  {
+    "title": "Animated Slider",
+    "description": "Interactive image slider.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "category": "Frontend",
+    "github": "https://github.com/myy475855-code/animated-slider"
+  },
+  {
+    "title": "Web Calculator",
+    "description": "Browser-based calculator.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "category": "Frontend",
+    "github": "https://github.com/myy475855-code/web-calculator"
+  },
+  {
+    "title": "Modern Login Form",
+    "description": "Modern responsive login interface.",
+    "tech": [
+      "HTML",
+      "CSS"
+    ],
+    "category": "Frontend",
+    "github": "https://github.com/myy475855-code/modren-login-form"
+  },
+  {
+    "title": "Photo Slider",
+    "description": "Interactive photo slider.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "category": "Frontend",
+    "github": "https://github.com/myy475855-code/photos-slide"
+  },
+  {
+    "title": "Duplicate Scanner",
+    "description": "Python utility for scanning duplicate files.",
+    "tech": [
+      "Python"
+    ],
+    "category": "Python Tools",
+    "github": "https://github.com/myy475855-code/python-duplicate-scanner"
+  },
+  {
+    "title": "Video & Photo Separator",
+    "description": "Python utility for separating video and photo files.",
+    "tech": [
+      "Python"
+    ],
+    "category": "Python Tools",
+    "github": "https://github.com/myy475855-code/python-video-and-photo-separator"
+  },
+  {
+    "title": "PPTX Merger",
+    "description": "Utility for merging PowerPoint files.",
+    "tech": [
+      "Python"
+    ],
+    "category": "Python Tools",
+    "github": "https://github.com/myy475855-code/pptx-merger"
+  },
+  {
+    "title": "Secret Key Generator",
+    "description": "Utility for generating secret keys.",
+    "tech": [
+      "Python"
+    ],
+    "category": "Python Tools",
+    "github": "https://github.com/myy475855-code/secret-key-generator"
+  },
+  {
+    "title": "Face Recognition Todo",
+    "description": "Todo application experiment using face recognition.",
+    "tech": [
+      "Python"
+    ],
+    "category": "AI / Python",
+    "github": "https://github.com/myy475855-code/face-recognization-to-do"
+  }
+]

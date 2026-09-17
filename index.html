@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Yousaf Yamin — Computer Science Student & Full Stack Web Developer">
+  <meta name="theme-color" content="#07111f">
+  <title>Muhammad Yousaf Yamin | Full Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="scrollProgress"></div>
+  <div class="noise"></div>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <canvas id="particles"></canvas>
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><span>MY</span> <small>DEV.PORTFOLIO</small></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://myy475855-code.github.io/MY-RESUME/" target="_blank" rel="noopener">My Portfolio <i class="bi bi-box-arrow-up-right"></i></a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="#contact">Let's Talk <i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section section-space">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <div class="status-pill"><span></span> OPEN TO WORK</div>
+            <p class="eyebrow">HELLO, I'M</p>
+            <h1>Muhammad<br><span>Yousaf Yamin.</span></h1>
+            <div class="type-line"><span id="typewriter"></span><b>_</b></div>
+            <p class="hero-text">I build clean, responsive and practical web experiences with a focus on usability, APIs and reliable software.</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary-custom">Explore Projects <i class="bi bi-arrow-down-right"></i></a>
+              <a href="#contact" class="btn btn-outline-custom">Contact Me</a>
+              <a href="https://myy475855-code.github.io/MY-RESUME/" target="_blank" rel="noopener" class="btn btn-outline-custom">View My Portfolio <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+            <div class="social-row">
+              <a href="https://github.com/myy475855-code" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="mailto:myy475855@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+              <a href="tel:+923265511189" aria-label="Phone"><i class="bi bi-telephone"></i></a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="visual-card">
+              <div class="code-top"><span></span><span></span><span></span><em>developer.js</em></div>
+              <div class="code-body">
+                <div><i>const</i> developer = {</div>
+                <div class="indent"><i>name:</i> <strong>"Muhammad Yousaf Yamin"</strong>,</div>
+                <div class="indent"><i>role:</i> <strong>"Full Stack Developer"</strong>,</div>
+                <div class="indent"><i>stack:</i> [<strong>"Python"</strong>, <strong>"Flask"</strong>,</div>
+                <div class="indent2"><strong>"JavaScript"</strong>, <strong>"Bootstrap"</strong>],</div>
+                <div class="indent"><i>focus:</i> <strong>"Building useful things"</strong></div>
+                <div>};</div>
+                <div class="code-cursor">▌</div>
+              </div>
+              <div class="mini-stat-grid">
+                <div><strong>24+</strong><span>Projects</span></div>
+                <div><strong>2+</strong><span>Experiences</span></div>
+                <div><strong>5+</strong><span>Core Areas</span></div>
+              </div>
+            </div>
+            <div class="floating-chip chip-1"><i class="bi bi-code-slash"></i> Clean Code</div>
+            <div class="floating-chip chip-2"><i class="bi bi-lightning-charge"></i> Fast UI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-space">
+      <div class="container">
+        <div class="section-heading reveal"><span>01</span><div><p>ABOUT ME</p><h2>Developer mindset.<br><em>Computer science foundation.</em></h2></div></div>
+        <div class="about-grid">
+          <div class="glass-card about-card reveal">
+            <p id="aboutText"></p>
+            <div class="quick-facts">
+              <div><span>Location</span><strong>Faisalabad, Pakistan</strong></div>
+              <div><span>Education</span><strong>BS Computer Science</strong></div>
+              <div><span>Focus</span><strong>Web & Software Development</strong></div>
+            </div>
+          </div>
+          <div class="principles reveal">
+            <div class="principle"><div class="icon-box"><i class="bi bi-braces"></i></div><div><h3>Build</h3><p>Functional interfaces, Flask apps, APIs and practical tools.</p></div></div>
+            <div class="principle"><div class="icon-box"><i class="bi bi-diagram-3"></i></div><div><h3>Think</h3><p>Use DSA, OOP, DBMS and problem-solving fundamentals.</p></div></div>
+            <div class="principle"><div class="icon-box"><i class="bi bi-arrow-repeat"></i></div><div><h3>Learn</h3><p>Keep experimenting with modern technologies and workflows.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-space">
+      <div class="container">
+        <div class="section-heading reveal"><span>02</span><div><p>TECHNICAL STACK</p><h2>Tools I use to<br><em>turn ideas into software.</em></h2></div></div>
+        <div class="filter-pills reveal" id="skillFilters"></div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-space">
+      <div class="container">
+        <div class="section-heading reveal"><span>03</span><div><p>SELECTED WORK</p><h2>Projects that show<br><em>how I build.</em></h2></div></div>
+        <div class="project-toolbar reveal">
+          <div class="filter-pills" id="projectFilters"></div>
+          <div class="search-box"><i class="bi bi-search"></i><input id="projectSearch" type="search" placeholder="Search projects..."></div>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+        <div class="text-center mt-4 reveal"><a class="github-more" href="https://github.com/myy475855-code?tab=repositories" target="_blank" rel="noopener">View all repositories <i class="bi bi-arrow-up-right"></i></a></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-space">
+      <div class="container">
+        <div class="section-heading reveal"><span>04</span><div><p>JOURNEY</p><h2>Experience &<br><em>education.</em></h2></div></div>
+        <div class="journey-grid">
+          <div class="timeline" id="experienceList"></div>
+          <div class="education-card glass-card reveal">
+            <div class="card-label">EDUCATION</div>
+            <div id="educationList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section-space">
+      <div class="container">
+        <div class="section-heading reveal"><span>05</span><div><p>LEARNING</p><h2>Certificates &<br><em>training.</em></h2></div></div>
+        <div class="cert-grid" id="certGrid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-space contact-section">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+            <h2>Let's build something<br><span>useful together.</span></h2>
+            <p class="contact-copy">I'm open to web development opportunities, internships, freelance work and interesting software projects.</p>
+          </div>
+          <div class="contact-actions">
+            <a href="mailto:myy475855@gmail.com?subject=Project%20Inquiry" class="btn btn-primary-custom">Send an Email <i class="bi bi-envelope-arrow-up"></i></a>
+            <a href="https://github.com/myy475855-code" target="_blank" rel="noopener" class="btn btn-outline-custom">GitHub <i class="bi bi-github"></i></a>
+            <a href="https://myy475855-code.github.io/MY-RESUME/" target="_blank" rel="noopener" class="btn btn-outline-custom">My Portfolio <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>© <span id="year"></span> Muhammad Yousaf Yamin</span>
+      <span class="mono">DESIGNED & BUILT WITH HTML · CSS · JS · BOOTSTRAP · JSON</span>
+    </div>
+  </footer>
+
+  <button id="backTop" class="back-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header border-0"><span class="modal-kicker">PROJECT DETAILS</span><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body pt-0">
+          <h3 id="modalTitle"></h3><p id="modalDescription"></p><div id="modalTech" class="tag-list"></div>
+          <a id="modalGithub" class="btn btn-primary-custom mt-3" target="_blank" rel="noopener">Open Repository <i class="bi bi-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
