@@ -42,4 +42,4 @@ Put your photo in `assets/images/` and add an image card/hero image if desired.
 
 
 ## My Existing Portfolio
-https://myy475855-code.github.io/MY-RESUME/
+https://myy475855-code.github.io/Muhammad-Yousaf/
