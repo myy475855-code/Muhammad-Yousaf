@@ -58,6 +58,12 @@ nav a.active{color:var(--text);background:var(--surface);box-shadow:0 1px 3px rg
 @keyframes iconPop{0%{transform:scale(1);}35%{transform:scale(1.18) rotate(-8deg);}70%{transform:scale(.95) rotate(4deg);}100%{transform:scale(1) rotate(0);}}
 @media(max-width:680px){.icon-btn{display:none;}}
 
+.marquee{width:100vw;margin-left:calc(50% - 50vw);overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface-2);padding:14px 0;}
+.marquee-track{display:flex;width:max-content;gap:14px;font-family:var(--mono);font-size:13px;color:var(--muted);white-space:nowrap;animation:marqueeScroll 22s linear infinite;}
+.marquee-track span:nth-child(odd){color:var(--accent);}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none;}}
+@keyframes marqueeScroll{to{transform:translateX(-50%);}}
+
 section{min-height:100vh;padding:88px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start;}
 section:last-of-type{border-bottom:none;}
 .full-bleed{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);}
@@ -192,14 +198,14 @@ footer{padding:26px 0 40px;text-align:center;color:var(--muted);font-family:var(
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1);}
 .reveal.in{opacity:1;transform:none;}
 
-.reveal .card,.reveal .edu-card,.reveal .cert,.reveal .skill-cat,.reveal .fact,.reveal .timeline>li{
+.reveal .card,.reveal .edu-card,.reveal .cert,.reveal .skill-cat,.reveal .fact,.reveal .timeline>li,.reveal .channel,.reveal .field,.reveal .chip{
   opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease;
 }
-.reveal.in .card,.reveal.in .edu-card,.reveal.in .cert,.reveal.in .skill-cat,.reveal.in .fact,.reveal.in .timeline>li{opacity:1;transform:none;}
-.reveal.in .card:nth-child(1),.reveal.in .edu-card:nth-child(1),.reveal.in .cert:nth-child(1),.reveal.in .skill-cat:nth-child(1),.reveal.in .fact:nth-child(1),.reveal.in .timeline>li:nth-child(1){transition-delay:.04s}
-.reveal.in .card:nth-child(2),.reveal.in .edu-card:nth-child(2),.reveal.in .cert:nth-child(2),.reveal.in .skill-cat:nth-child(2),.reveal.in .fact:nth-child(2),.reveal.in .timeline>li:nth-child(2){transition-delay:.10s}
-.reveal.in .card:nth-child(3),.reveal.in .edu-card:nth-child(3),.reveal.in .cert:nth-child(3),.reveal.in .skill-cat:nth-child(3),.reveal.in .fact:nth-child(3),.reveal.in .timeline>li:nth-child(3){transition-delay:.16s}
-.reveal.in .card:nth-child(4),.reveal.in .edu-card:nth-child(4),.reveal.in .cert:nth-child(4),.reveal.in .skill-cat:nth-child(4),.reveal.in .fact:nth-child(4),.reveal.in .timeline>li:nth-child(4){transition-delay:.22s}
+.reveal.in .card,.reveal.in .edu-card,.reveal.in .cert,.reveal.in .skill-cat,.reveal.in .fact,.reveal.in .timeline>li,.reveal.in .channel,.reveal.in .field,.reveal.in .chip{opacity:1;transform:none;}
+.reveal.in .card:nth-child(1),.reveal.in .edu-card:nth-child(1),.reveal.in .cert:nth-child(1),.reveal.in .skill-cat:nth-child(1),.reveal.in .fact:nth-child(1),.reveal.in .timeline>li:nth-child(1),.reveal.in .channel:nth-child(1),.reveal.in .field:nth-child(1),.reveal.in .chip:nth-child(1){transition-delay:.04s}
+.reveal.in .card:nth-child(2),.reveal.in .edu-card:nth-child(2),.reveal.in .cert:nth-child(2),.reveal.in .skill-cat:nth-child(2),.reveal.in .fact:nth-child(2),.reveal.in .timeline>li:nth-child(2),.reveal.in .channel:nth-child(2),.reveal.in .field:nth-child(2),.reveal.in .chip:nth-child(2){transition-delay:.10s}
+.reveal.in .card:nth-child(3),.reveal.in .edu-card:nth-child(3),.reveal.in .cert:nth-child(3),.reveal.in .skill-cat:nth-child(3),.reveal.in .fact:nth-child(3),.reveal.in .timeline>li:nth-child(3),.reveal.in .channel:nth-child(3),.reveal.in .field:nth-child(3),.reveal.in .chip:nth-child(3){transition-delay:.16s}
+.reveal.in .card:nth-child(4),.reveal.in .edu-card:nth-child(4),.reveal.in .cert:nth-child(4),.reveal.in .skill-cat:nth-child(4),.reveal.in .fact:nth-child(4),.reveal.in .timeline>li:nth-child(4),.reveal.in .channel:nth-child(4),.reveal.in .field:nth-child(4),.reveal.in .chip:nth-child(4){transition-delay:.22s}
 .reveal.in .card:nth-child(5),.reveal.in .cert:nth-child(5){transition-delay:.28s}
 .reveal.in .card:nth-child(n+6){transition-delay:.34s}
 
@@ -317,6 +323,13 @@ footer{padding:26px 0 40px;text-align:center;color:var(--muted);font-family:var(
         <span class="k">return</span> <span class="s">f"shipped: {idea}"</span></pre>
     </div>
   </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Python</span><span>•</span><span>Flask</span><span>•</span><span>Django</span><span>•</span><span>C#</span><span>•</span><span>C++</span><span>•</span><span>JavaScript</span><span>•</span><span>REST APIs</span><span>•</span><span>OAuth</span><span>•</span><span>SQL</span><span>•</span><span>Bootstrap</span><span>•</span>
+      <span>Python</span><span>•</span><span>Flask</span><span>•</span><span>Django</span><span>•</span><span>C#</span><span>•</span><span>C++</span><span>•</span><span>JavaScript</span><span>•</span><span>REST APIs</span><span>•</span><span>OAuth</span><span>•</span><span>SQL</span><span>•</span><span>Bootstrap</span><span>•</span>
+    </div>
+  </div>
 
   <section id="projects" class="reveal">
     <p class="eyebrow">proof, not promises</p>
@@ -521,6 +534,7 @@ const DATA = {
     {name:"Resume Site", desc:"A personal resume website.", tags:["HTML","CSS"], url:"https://github.com/myy475855-code/MYY-RESUME"}
   ],
   certs: [
+    {title:"CS50's Introduction to Programming with Python", provider:"Harvard (CS50)", url:"https://certificates.cs50.io/b5fb4f18-08bf-4cdd-9fe9-2934640c326c.pdf?size=letter"},
     {title:"Claude & Anthropic AI", provider:"Anthropic Academy", url:"https://academy.claude.com/verify/c0c10ac4dceeb405db338982dd71680b"},
     {title:"Claude & Anthropic AI (Course 2)", provider:"Anthropic Academy", url:"https://academy.claude.com/verify/001b3995f5242dea3b19b83916a94503"},
     {title:"Flask Python", provider:"Great Learning", url:"https://www.mygreatlearning.com/certificate/MLHMWDSG"},
