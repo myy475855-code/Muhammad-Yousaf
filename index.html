@@ -308,6 +308,7 @@ footer{padding:26px 0 40px;text-align:center;color:var(--muted);font-family:var(
       <div class="hero-cta hero-in" style="--d:.32s">
         <a class="btn btn-primary" href="#projects">View my work</a>
         <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" id="cvBtn" download="Muhammad-Yousaf-Yamin-CV.pdf">Download CV ↓</a>
       </div>
     </div>
     <div class="code-card" aria-hidden="true">
@@ -349,6 +350,7 @@ footer{padding:26px 0 40px;text-align:center;color:var(--muted);font-family:var(
       <div class="about-layout">
         <div class="about-text">
           <p>I'm a Computer Science student in Faisalabad who taught himself to ship full products, not just class assignments — from a quiz-grading LMS in C# to Flask apps wired into real APIs like Gemini and Google OAuth.</p>
+          <p>I completed Harvard's CS50P (Introduction to Programming with Python) end to end, working through about 42 small projects and problem sets along the way — that's where a lot of my Python fundamentals got stress-tested.</p>
           <p>What pulls me in is the gap between "it works on my machine" and "it works for a real user." I close that gap by building things end-to-end: interface, backend, database, deploy.</p>
         </div>
         <div class="fact-panel">
@@ -428,6 +430,7 @@ footer{padding:26px 0 40px;text-align:center;color:var(--muted);font-family:var(
             <a class="btn btn-ghost" href="https://github.com/myy475855-code" target="_blank" rel="noopener">GitHub ↗</a>
             <a class="btn btn-ghost" href="https://www.linkedin.com/in/muhammad-yousaf-905532391/" target="_blank" rel="noopener">LinkedIn ↗</a>
             <a class="btn btn-ghost" href="https://myy475855-code.github.io/Muhammad-Yousaf" target="_blank" rel="noopener">Website ↗</a>
+            <a class="btn btn-primary" id="cvBtn2" download="Muhammad-Yousaf-Yamin-CV.pdf">Download CV ↓</a>
           </div>
         </div>
 
@@ -489,6 +492,7 @@ const DATA = {
     {icon:"📘", date:"2022 — 2024 · Faisalabad", title:"Intermediate — ICS", sub:"Aspire College, Kurrianwala · Score 740/1200"}
   ],
   projects: [
+    {name:"Student Expense Tracker", featured:true, desc:"CS50P final project — a Python tool for students to log spending, categorize it, and see where their money actually goes each month.", tags:["Python"], url:"https://github.com/myy475855-code"},
     {name:"LMS — Learning Management System", featured:true, desc:"C# + SQL Server LMS built for a university project — teachers upload lectures and quizzes, students take them with automatic grading, cutting manual marking to zero.", tags:["C#","SQL Server"], url:"https://github.com/myy475855-code/lms-in-C-"},
     {name:"LMS (No SQL Version)", desc:"A version of the LMS project that runs without a SQL database.", tags:["C#"], url:"https://github.com/myy475855-code/lms-in-C-without-sql"},
     {name:"Simple LMS", desc:"A simplified learning management system built with plain HTML, CSS and JS.", tags:["HTML","CSS","JavaScript"], url:"https://github.com/myy475855-code/lms-simple-in-html-ccs-js"},
@@ -535,6 +539,7 @@ const DATA = {
   ],
   certs: [
     {title:"CS50's Introduction to Programming with Python", provider:"Harvard (CS50)", url:"https://certificates.cs50.io/b5fb4f18-08bf-4cdd-9fe9-2934640c326c.pdf?size=letter"},
+    {title:"CS50 Certificate", provider:"Harvard (CS50)", url:"https://certificates.cs50.io/e4f02f26-46b5-445f-978e-40f96af66e81.pdf?size=letter"},
     {title:"Claude & Anthropic AI", provider:"Anthropic Academy", url:"https://academy.claude.com/verify/c0c10ac4dceeb405db338982dd71680b"},
     {title:"Claude & Anthropic AI (Course 2)", provider:"Anthropic Academy", url:"https://academy.claude.com/verify/001b3995f5242dea3b19b83916a94503"},
     {title:"Flask Python", provider:"Great Learning", url:"https://www.mygreatlearning.com/certificate/MLHMWDSG"},
@@ -775,6 +780,11 @@ form.addEventListener('submit', async (e)=>{
     sendBtn.disabled = false; sendTxt.textContent = 'Send message';
   }
 });
+
+const CV_BASE64 = "JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9Db250ZW50cyAxMCAwIFIgL01lZGlhQm94IFsgMCAwIDYxMiA3OTIgXSAvUGFyZW50IDkgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL0NvbnRlbnRzIDExIDAgUiAvTWVkaWFCb3ggWyAwIDAgNjEyIDc5MiBdIC9QYXJlbnQgOSAwIFIgL1Jlc291cmNlcyA8PAovRm9udCAxIDAgUiAvUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PiAvUm90YXRlIDAgL1RyYW5zIDw8Cgo+PiAKICAvVHlwZSAvUGFnZQo+PgplbmRvYmoKNyAwIG9iago8PAovUGFnZU1vZGUgL1VzZU5vbmUgL1BhZ2VzIDkgMCBSIC9UeXBlIC9DYXRhbG9nCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9BdXRob3IgKFwoYW5vbnltb3VzXCkpIC9DcmVhdGlvbkRhdGUgKEQ6MjAyNjEwMDIwOTE2MDUrMDAnMDAnKSAvQ3JlYXRvciAoXCh1bnNwZWNpZmllZFwpKSAvS2V5d29yZHMgKCkgL01vZERhdGUgKEQ6MjAyNjEwMDIwOTE2MDUrMDAnMDAnKSAvUHJvZHVjZXIgKFJlcG9ydExhYiBQREYgTGlicmFyeSAtIFwob3BlbnNvdXJjZVwpKSAKICAvU3ViamVjdCAoXCh1bnNwZWNpZmllZFwpKSAvVGl0bGUgKFwoYW5vbnltb3VzXCkpIC9UcmFwcGVkIC9GYWxzZQo+PgplbmRvYmoKOSAwIG9iago8PAovQ291bnQgMiAvS2lkcyBbIDUgMCBSIDYgMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMCAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAxOTU3Cj4+CnN0cmVhbQpHYXVITEQwK0RqJkg4OC5ZcXFzOGpYcmVMXlonXSc2NklSIyQnIWQsRmYmTiEmT3Fhczs4N2U0P1tqU28mPGwrbjlwbHFJW1VbTTdCRDZbcFs1JWFsSW1iPDAodVdWbmRpZWFkSzBLVE1HImhERzBedC47KmcrXTxiTlddT0BJKWliOjwxXiRLKCVbWU5uMl9pYkNKdUpCWi46YlV1O3AyOExlP00oZXM0ZS5oaEo1TD8jPUQ2MCI/WGkwLFFFM2VwS2ZrL2o3UklmXVImQyZVOXBwLT5pZlVCNGxFOjwvTlBMbWhYcTctJ24hRkVDYDI5RksvUDpbOj9mRUhQX05MX0dnRywkbCRGOT5MdXE5Kiw8KD9IY043X2VVKSk7MiJ0dGkiIiZjNGNAN0FWJSlxSVtKN2ZWSScqTmA9RWA8OWkjKmk+TmJMUENqWFA0OmF0anNgLkBta1NuZFtvZjVRN2I9OjNkIVNZTGZYXUZZMnFKMFckdHQiPHVcXW0pN0dqY3UkITw2OmZfYTJeSUpbVTZzKDA6OkhGcSIjNDs0IyFZTjczOSYlI1MrL25bYGZua3JfZUZKIjMsUTlyQUpyKTxPcDVwNG9MZG1FWFJQXUxXNyxuJFJjMi1XbGs3PnMqT3JkQjklNDgoUicrblgvXFIpQitDMkQobGRiN2Mnc1lyTHJMaHE/RWNkUmUtYXUlUGQ8UC9uOlI1TDddImFhZiJ0P1tLNVlDdGY2Xzs+RmAwdFBdOHNAcTdcXFxcViJjRD48T2I+RCk3NUNWdShDQlI2LUw2JSZPciFbYzpAUmJRImlILi5HOmNxJWwnQzcxM0UobCs+KEVmTigsTThhUGVnJjtvK2F0O1lVJjk5QGshYGtVXWljSzdUZnMjaFtrSG0zZzE+VyJjbTg5PDA9R200ZFNyVmQ8YGhVOlhIajolQV0tQEpgZkM9MTtfM0kvJ29JVkVUb19ANydsdE04J2ZxWG5zaD4hJkoqQklYT0RcQkYsLUZHO1Q3U09hbCU+IVxGKTlmTEAvKy9tUydjYkNCVSpRPDA9LEUlTWZBSDJLJypbJV4wSEouY2MqMUZVLCgtNFFSWWYnSyYtRWxvSio4J3BcPDpqakgkQiJCZEo7WiViKzlUUDYmXT9IZyEmLjNqSGBLMUFval84bj1QPkBDXU1Cc2xrclI3cUJxQio2dFc/KmddVHMiXSdHZnNKV0w4MFVjI2xIWTd1REhTPFxxXildM2wmW3IicnNzSVJBXE9oa2VbIkIuRHNcQUo+ZmNhQVBzU0hVUjpIXT48LENcR2piXiZnYj5dVVpFPi89bm81SnUpcmg4NkA3bFQkL2JbVUpBbE9oUlNBc0paUypmblcwPV0oZm8jZ1shNz5rOmNgbU9vRSk4MyFWKmo3c1YzXUhTMGVJLWM+IklmP1s8ZDctc2JKUDh0LThJajs8TWIrR2A+OV10VyI1TTJcOHU+NGQoYE85W1pTTCcjSUJOWVNxZEIqJVFSdDUjUzoodTwvN14+Vz0vNzpDYVUzWzBOTDQkQWxuS0JrNWk9X2FXTFhaLWRpLi4lJV8nI3BtbWM+V1A4S0YiPm5wOCpyZkghYl5hQSlrYG1nZVhDInNTWkRqOWNhVilcSVpLQ1JmWilhTT5BVk08Klc1YTpyUj0oc2JpaS1haXROPWhpSFtHWzUpO19MXTsxPmhlMGs/aG04TUFEXWdPXmsuVVFkPDo6R0FCLFQwNix0S1RzO0tOX1RQQT82YWskblgjNVc1YEwsZzpmbm1mQDBQMFArJ20+cidyMl1wPGdIJm0zQVROWnBZP0FSUGwucGZOPl5BP1w0MiVGcHJDO3BMSWdeLj83RDxHY2gpcVhDcWEpInQvREE5cFQ0aStbLUUlQWEidDwtJSs+NlgzOkczJkRNSHRZI1B0cl1FZ00nalwmJ2tTJDVwXkZmMythLWUrYVQyRDNtJm06NjJyS19pR2dobE1hXTJVNz8jQChZaC8namZtQkgsT3E/XUkkL3MoUCJlbjRvKSVWb29mSW81SDAtOHNjO2lKOEIiTyhDS1hTV0JvLDVOSidtSi06T2FcRWNTQXE7Il4jQ1YpQCVfK1U2YDJhKk1SYjUkTV5lOTg7XkBLRmNGTmVFdSlSOmxeP24icjlTJSRbYChCNTRCb2c4Wm5TQi85bnIyODFBITcoM0AsLFIySHFSLDg9VGlhZDljRWJdRCgpPjpmSC1eRzIuQSknJTolaW5PRjpLYV4kXGxkQlQsKlYvIz9AVWVSbz1Eb0QzSFcrI1VCJTUjKmlvLFhWSj9JUWVoKFFeWEMnKHFSdHNKcikxVUQvOSJCPG8sJSk3OFxjRyg7TT5jcE1SN0JtNDsnMFBgUXEyRzJHVkYqKj8ydUJdVEpYIWgvMi1oZDE9QE9UVC5jSmJZbjghRF4iQ24pWF91SEozX25WKyNeIXE9Q2xhKUpxMF9EcTtFSyFZaSY3akdscUVyWSQ1clhqQF5CRk8sUk9dO3FaV0xHVmRBLSojMkhgTWhKU2pRNWJfQmYrXz0mO3NbX3MiLklWSG4kcXE4PE5BP29vZ2Nuc1xVZicxWkphcTIoOyxSWX4+ZW5kc3RyZWFtCmVuZG9iagoxMSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCA0MDkKPj4Kc3RyZWFtCkdhdG5hOWkmVlsqIVltb1RBaGpbR2FSZ1JsQWhPMyxUSUFeR2hKcDJBWktdI0ZwNyFeZ09fLXU0VjFuZlhOQjJaVDNuJUJecGY2Z15JOE4oMTdWLEg4OllMWyZwWShwM05mXiliQ0Z1cU4yYnRGQDFuKlJgIV51Y0NzRipWK1NoTz07XzpRKFo+TmsyTDNbM3Q+VTYkIWR0I0BOPzUtNyQ6OCcwSEYkXzwubXBsQylfYjp1TmIiWjt0T3RbNE5YWF9UTDxsYldPX1VNXVM5UG9qXStKPzVVSEhVRGVJLUIjU0JTPl5ZZnBOTjJnJUNpZyYsVD9jQ2Y+QUU/bj4kU2VRTlkoY09SSDxJZ1Q2SUclWzRdXyhqIlZvbTksJilxSTAlSGFrJD5SREdDTC9hXkZzK2VsPkZkRCU1KGU+bS9eTkVEJChZZjtyaDJpWGNHL0dMPCwxJEtHSV5gUlI4XCVHVChROm5QI0M+JS1IRCorKHUtNjI+OlNTVGMsSClJKV9mPSNFIz4lSloqcj9yV2luJzVHOXJyfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMgowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDExMiAwMDAwMCBuIAowMDAwMDAwMjE5IDAwMDAwIG4gCjAwMDAwMDAzMzEgMDAwMDAgbiAKMDAwMDAwMDQ0NiAwMDAwMCBuIAowMDAwMDAwNjQwIDAwMDAwIG4gCjAwMDAwMDA4MzQgMDAwMDAgbiAKMDAwMDAwMDkwMiAwMDAwMCBuIAowMDAwMDAxMTgyIDAwMDAwIG4gCjAwMDAwMDEyNDcgMDAwMDAgbiAKMDAwMDAwMzI5NiAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9JRCAKWzwzOWJhZGZhOWE3ZWM0ZTQ2NDgzYzg0ZGQzYzA0NzZhMz48MzliYWRmYTlhN2VjNGU0NjQ4M2M4NGRkM2MwNDc2YTM+XQolIFJlcG9ydExhYiBnZW5lcmF0ZWQgUERGIGRvY3VtZW50IC0tIGRpZ2VzdCAob3BlbnNvdXJjZSkKCi9JbmZvIDggMCBSCi9Sb290IDcgMCBSCi9TaXplIDEyCj4+CnN0YXJ0eHJlZgozNzk2CiUlRU9GCg==";
+const cvDataUrl = 'data:application/pdf;base64,' + CV_BASE64;
+document.getElementById('cvBtn').href = cvDataUrl;
+document.getElementById('cvBtn2').href = cvDataUrl;
 
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
